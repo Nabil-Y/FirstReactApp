@@ -1,0 +1,74 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*, *::before, *::after {
+box-sizing: inherit;
+}
+
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.4;
+  background: #c0d2d4;
+  color: #555;
+  -webkit-tap-highlight-color: transparent;
+  }
+
+h1 {
+  font-weight: bold;
+  font-size: 12vmin;
+  text-align: center;
+  margin: 3rem auto;
+  color: #fff;
+}
+
+h1 span {
+  padding: 15px;
+  background: #2ec2b0;
+}
+
+.dictionary {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; 
+  margin: auto;
+}
+
+.term {
+  text-align: center;
+  max-width: 20rem;
+  margin: 2rem;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: all 0.1s ease-in-out;
+}
+
+dt {
+  margin-bottom: 1rem;
+  color: #2ec2b0;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.emoji {
+  display: block;
+  margin: 10px auto;
+  font-size: 4rem;
+}
+
+dd {
+  font-size: 1rem;
+  margin-left: 0; 
+}
+
+@media screen and (max-width:700px) {
+  .term {
+    margin: 1rem 0;
+  }
+}
